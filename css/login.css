@@ -1,0 +1,73 @@
+
+:root{
+    --white: #fff;
+    --grey-form: #BABABA;
+}
+
+#login{
+    background:  url('../img/daytime.png');
+    color: var(--white);
+}
+.header-section{
+    padding: 100px 0 0 0;
+    margin-bottom: 64px
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.form-section input, form{
+    color: var(--grey-form);
+    width: 100%
+}
+
+.form-section input{
+    padding: 15px;
+    border: none;
+}
+
+.form-section input:focus{
+    outline: none;
+}
+
+.form-section input::placeholder{
+    color: var(--grey-form);
+}
+
+.form-section input[type=submit]{
+    margin-bottom: 32px;
+    color: var(--white);
+    background-color: #225835;
+    border-radius: 5px;
+}
+
+.form-section p{
+    margin-top: 16px
+}
+
+.field-cover{
+    background-color: var(--white);
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+@media only screen and (min-width: 950px){
+    .form-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+    }
+}

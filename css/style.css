@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+:root{
+
+    /** font sizes **/
+    --h1: 64px;
+    --h2: 32px;
+    --p: 16px;
+    --small: 12px;
+
+    /** font family **/
+    --font-1: 'DM Sans', sans-serif;
+
+    /** color **/
+    --green-1: #225835;
+    --green-2: #02571f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** Element **/
+body{
+    font-family: var(--font-1);
+}
+
+
+h1{
+    font-size: var(--h1);
+    
+}
+
+h2{
+    font-size: var(--h2);
+   
+}
+
+p, a{
+    font-size: var(--p);
+ 
+}
+
+small{
+    font-size: var(--small);
+    
+}
+
+a{
+    text-decoration:dotted;
+    color: var(--white);
+    border-bottom: 1px dotted var(--white);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 32px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+header{
+    padding-bottom: 32px;
+}
+
+/** Classes **/
+.auth-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
